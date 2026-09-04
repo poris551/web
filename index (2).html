@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProonaDigital | 마인크래프트 서버 개발 · 운영</title>
+
+  <meta name="description" content="ProonaDigital(프루나디지털)은 마인크래프트 서버 개발, 운영, 콘텐츠 및 시스템 개발을 진행합니다." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="author" content="ProonaDigital" />
+  <meta name="application-name" content="ProonaDigital" />
+  <meta name="keywords" content="ProonaDigital, Proona Digital, Proonadigital, 프루나디지털, 마인크래프트 서버 개발, 마인크래프트 서버 외주, 마인크래프트 서버 운영" />
+
+  <link rel="canonical" href="https://proonadigital.kr/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ProonaDigital" />
+  <meta property="og:title" content="ProonaDigital | 마인크래프트 서버 개발 · 운영" />
+  <meta property="og:description" content="ProonaDigital(프루나디지털) 공식 웹사이트. 마인크래프트 서버 개발, 운영, 콘텐츠 및 시스템 개발." />
+  <meta property="og:url" content="https://proonadigital.kr/" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="ProonaDigital | 마인크래프트 서버 개발 · 운영" />
+  <meta name="twitter:description" content="ProonaDigital(프루나디지털) 공식 웹사이트." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://proonadigital.kr/#website",
+    "url": "https://proonadigital.kr/",
+    "name": "ProonaDigital",
+    "alternateName": [
+      "Proonadigital",
+      "Proona Digital",
+      "프루나디지털"
+    ],
+    "inLanguage": "ko-KR",
+    "publisher": {
+      "@id": "https://proonadigital.kr/#organization"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://proonadigital.kr/#organization",
+    "name": "ProonaDigital",
+    "alternateName": [
+      "Proonadigital",
+      "Proona Digital",
+      "프루나디지털"
+    ],
+    "url": "https://proonadigital.kr/",
+    "description": "ProonaDigital(프루나디지털)은 마인크래프트 서버 개발, 운영, 콘텐츠 및 시스템 개발을 진행합니다."
+  }
+  </script>
+
+  
+  <link rel="stylesheet" href="style2.css" />
+
+
+  <style id="stack-marquee-style">
+    .stack-marquee-zone{
+      width:min(1180px, calc(100% - 40px));
+      margin:clamp(76px,10vw,138px) auto;
+    }
+
+    .stack-marquee-head{
+      margin-bottom:22px;
+    }
+
+    .stack-marquee-head h2{
+      margin:.08em 0 0;
+    }
+
+    .stack-marquee-shell{
+      position:relative;
+      overflow:hidden;
+      margin-top:16px;
+      padding:0;
+      border-top:1px solid rgba(255,255,255,.08);
+      border-bottom:1px solid rgba(255,255,255,.08);
+      background:rgba(8,8,8,.18);
+    }
+
+    .stack-marquee-label{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:12px 2px 10px;
+      font-family:monospace;
+      letter-spacing:.12em;
+    }
+
+    .stack-marquee-label span{
+      font-size:.70rem;
+      color:rgba(255,255,255,.62);
+    }
+
+    .stack-marquee-label small{
+      font-size:.59rem;
+      color:rgba(255,255,255,.24);
+    }
+
+    .logo-marquee{
+      position:relative;
+      overflow:hidden;
+      padding:14px 0 18px;
+      mask-image:linear-gradient(
+        90deg,
+        transparent 0,
+        #000 5%,
+        #000 95%,
+        transparent 100%
+      );
+      -webkit-mask-image:linear-gradient(
+        90deg,
+        transparent 0,
+        #000 5%,
+        #000 95%,
+        transparent 100%
+      );
+    }
+
+    .logo-marquee-track{
+      display:flex;
+      width:max-content;
+      align-items:center;
+      gap:34px;
+      padding-left:34px;
+      animation:toolMarquee 34s linear infinite;
+      transform:translate3d(0,0,0);
+      will-change:transform;
+    }
+
+    .logo-marquee-slower .logo-marquee-track{
+      animation-duration:39s;
+    }
+
+    .tool-card{
+      flex:0 0 auto;
+      min-width:108px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      padding:7px 4px;
+      border:0;
+      border-radius:0;
+      background:none;
+      box-shadow:none;
+      opacity:.72;
+      transition:opacity .18s ease, transform .18s ease;
+    }
+
+    .tool-card:hover{
+      opacity:1;
+      transform:translateY(-2px);
+      background:none;
+      border:0;
+    }
+
+    .tool-card img{
+      width:31px;
+      height:31px;
+      object-fit:contain;
+      filter:grayscale(1) brightness(1.65);
+      opacity:.86;
+      transition:filter .18s ease,opacity .18s ease,transform .18s ease;
+    }
+
+    .tool-card:hover img{
+      filter:grayscale(0) brightness(1.06);
+      opacity:1;
+      transform:scale(1.06);
+    }
+
+    .tool-card span{
+      max-width:120px;
+      text-align:center;
+      font-size:.75rem;
+      font-weight:650;
+      line-height:1.15;
+      color:rgba(255,255,255,.72);
+      white-space:nowrap;
+    }
+
+    @keyframes toolMarquee{
+      from{
+        transform:translate3d(0,0,0);
+      }
+      to{
+        transform:translate3d(calc(-50% - 17px),0,0);
+      }
+    }
+
+    @media (max-width:760px){
+      .stack-marquee-zone{
+        width:min(100% - 24px,1180px);
+        margin:72px auto;
+      }
+
+      .logo-marquee{
+        mask-image:linear-gradient(
+          90deg,
+          transparent 0,
+          #000 8%,
+          #000 92%,
+          transparent 100%
+        );
+        -webkit-mask-image:linear-gradient(
+          90deg,
+          transparent 0,
+          #000 8%,
+          #000 92%,
+          transparent 100%
+        );
+      }
+
+      .logo-marquee-track{
+        gap:24px;
+        padding-left:24px;
+        animation-duration:29s;
+      }
+
+      .logo-marquee-slower .logo-marquee-track{
+        animation-duration:34s;
+      }
+
+      .tool-card{
+        min-width:90px;
+        gap:8px;
+      }
+
+      .tool-card img{
+        width:27px;
+        height:27px;
+      }
+
+      .tool-card span{
+        font-size:.68rem;
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      .logo-marquee-track{
+        animation:none!important;
+        transform:none!important;
+      }
+
+      .logo-marquee{
+        overflow-x:auto;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <div class="backrooms-light" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="crt-stage" id="top">
+    <div class="crt-shell">
+      <div class="crt-bezel">
+        <div class="crt-screen" id="crtScreen">
+          <div class="screen-glow"></div>
+          <div class="scanlines"></div>
+          <div class="screen-noise"></div>
+          <div class="screen-content">
+            <div class="signal-row"></div>
+            <div class="hero-copy">
+              <h1>ProonaDigital</h1>
+            </div>
+            <div class="screen-footer"></div>
+          </div>
+        </div>
+        <div class="crt-controls" aria-hidden="true">
+          <span class="control-dot"></span><span class="control-dot"></span>
+          <span class="vent"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="archive" id="archive">
+    <div class="cable cable-left" aria-hidden="true"></div>
+    <div class="cable cable-right" aria-hidden="true"></div>
+
+    <section class="archive-head section-reveal">
+      <p class="eyebrow">2016—2026</p>
+      <h2>개발 이력</h2>
+    </section>
+
+    <section class="tape-list">
+      <article class="tape-card section-reveal" data-code="">
+        <div class="tape-index">01</div>
+        <div class="tape-content">
+          <div class="tape-meta"><span>2016 ~ 2026</span></div>
+          <h3>국내 서버 개발 및 운영</h3>
+          <ul>
+            <li><strong>포리스온라인 [현실경제]</strong><span>개발 및 운영</span></li>
+			<li><strong>오라시온 [픽셀몬]</strong><span>개발 및 운영</span></li>
+            <li><strong>룬필드 [국가전쟁]</strong><span>개발 및 운영</span></li>
+            <li><strong>도스온라인 [현실경제]</strong><span>개발</span></li>
+            <li><strong>리유온라인 [코블몬]</strong><span>개발</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tape-card section-reveal" data-code="">
+        <div class="tape-index">02</div>
+        <div class="tape-content">
+          <div class="tape-meta"><span>2026</span><span>스트리머 서버</span></div>
+          <h3>방송인 서버 개발</h3>
+          <ul><li><strong>해켓몬</strong><span>개발기간 1달 반</span></li></ul>
+        </div>
+      </article>
+
+      <article class="tape-card section-reveal alert-card" data-code="">
+        <div class="tape-index">03</div>
+        <div class="tape-content">
+          <div class="tape-meta"><span>2027</span><span>프로젝트</span></div>
+          <h3>국가전쟁 RPG</h3>
+          <p class="status-line"><span class="blink-dot"></span>개발중</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="stack-marquee-zone section-reveal" aria-labelledby="stackMarqueeTitle">
+      <div class="stack-marquee-head">
+        <h2 id="stackMarqueeTitle">기술 스택 / 그래픽</h2>
+      </div>
+
+      <div class="stack-marquee-shell">
+        <div class="logo-marquee" aria-label="기술 스택">
+          <div class="logo-marquee-track">
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/openjdk" alt=""><span>Java</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/kotlin" alt=""><span>Kotlin</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/springboot" alt=""><span>Spring Boot</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/mysql" alt=""><span>MySQL</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/mongodb" alt=""><span>MongoDB</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/docker" alt=""><span>Docker</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/googlecloud" alt=""><span>GCP</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/git" alt=""><span>Git</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/redis" alt=""><span>Redis</span></div>
+
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/openjdk" alt=""><span>Java</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/kotlin" alt=""><span>Kotlin</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/springboot" alt=""><span>Spring Boot</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/mysql" alt=""><span>MySQL</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/mongodb" alt=""><span>MongoDB</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/docker" alt=""><span>Docker</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/googlecloud" alt=""><span>GCP</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/git" alt=""><span>Git</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/redis" alt=""><span>Redis</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-marquee-shell stack-marquee-shell-graphics">
+ 
+        <div class="logo-marquee logo-marquee-slower" aria-label="그래픽">
+          <div class="logo-marquee-track">
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/autodesk" alt=""><span>3ds Max</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/blender" alt=""><span>Blender</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/autodesk" alt=""><span>AutoCAD</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/sketchup" alt=""><span>SketchUp</span></div>
+            <div class="tool-card"><img src="https://cdn.simpleicons.org/epicgames" alt=""><span>Twinmotion</span></div>
+            <div class="tool-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/960px-Adobe_Photoshop_CC_icon.svg.png" alt=""><span>Photoshop</span></div>
+
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/autodesk" alt=""><span>3ds Max</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/blender" alt=""><span>Blender</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/autodesk" alt=""><span>AutoCAD</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/sketchup" alt=""><span>SketchUp</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://cdn.simpleicons.org/epicgames" alt=""><span>Twinmotion</span></div>
+            <div class="tool-card" aria-hidden="true"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/960px-Adobe_Photoshop_CC_icon.svg.png" alt=""><span>Photoshop</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-zone section-reveal">
+      <div class="contact-terminal">
+        <div class="terminal-top"><span>연락처</span><span class="terminal-led"></span></div>
+        <div class="contact-row">
+          <div>
+            <small>디스코드</small>
+            <strong id="copyText">proonadigital</strong>
+          </div>
+          <button id="copyBtn" class="copy-btn" type="button">ID 복사</button>
+        </div>
+        <div class="copy-toast" id="copyToast">복사 되었습니다.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-reveal">
+    <div class="footer-inner">
+      <div class="footer-mark">ProonaDigital.</div>
+      <p>사업자등록번호: 사이트-준비중 <a href="#">[확인]</a> <span>/</span> 통신판매업신고: 제 2026 서울강남-0000 호</p>
+      <p>주소: 서울특별시 강남구 역삼로88길 9, 203호 (대치동)</p>
+      <p class="footer-status">© 2026 ProonaDigital</p>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
